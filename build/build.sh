@@ -48,7 +48,7 @@ ksu() {
     elif [[ "$ARGS" == *"--next"* ]]; then
         if [ ! -d "$KERNEL_DIR/KernelSU-Next" ]; then
             echo "INFO: Cloning KernelSU Next"
-            curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next-susfs/kernel/setup.sh" | bash -s next
+            curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next-susfs/kernel/setup.sh" | bash -s next-susfs
         fi
         
         ZIP_NAME="Squeak_KSU_NEXT_${DATE}"
